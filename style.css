@@ -1,0 +1,395 @@
+@charset "UTF-8";
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: “”‘’;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skipLink:focus {
+  left: 0;
+}
+
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  padding: 5% 10% 10% 10%;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  padding: 15px;
+  color: #ffffff;
+  letter-spacing: 2.5px;
+}
+
+span {
+  color: #30d2a5;
+}
+
+.sectionLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHeader,
+.sectionContent {
+  padding: 1% 10%;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 8px 6px -6px black;
+}
+.sectionHeader h2 {
+  color: #999999;
+}
+
+.sectionHeader h2.sectionNumber {
+  font-size: 50px;
+  font-size: 2.5rem;
+}
+.sectionHeader h2.sectionNumber::after {
+  font-size: 36px;
+  font-size: 1.8rem;
+}
+
+.sectionNumber {
+  display: flex;
+  align-items: center;
+}
+.sectionNumber::after {
+  content: "―";
+}
+
+.sectionDesc h2 {
+  font-size: 24px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.sectionDesc span {
+  display: block;
+  color: #1a1a1a;
+  text-transform: lowercase;
+  font-size: 14px;
+  font-size: 0.7rem;
+}
+
+.sectionContent {
+  background: #fafafa;
+}
+
+h1, h2, h3, p, a {
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 120px;
+  font-size: 6rem;
+  line-height: 192;
+  line-height: 9.6rem;
+  font-family: "Comfortaa", cursive;
+  text-transform: lowercase;
+}
+
+body {
+  font-family: "Maven Pro", sans-serif;
+}
+
+header h2 {
+  font-size: 36px;
+  font-size: 1.8rem;
+}
+
+.headerNav li {
+  font-size: 20px;
+  font-size: 1rem;
+}
+
+.headerNavSocial li {
+  font-size: 16px;
+  font-size: 0.8rem;
+}
+
+header {
+  min-height: 100vh;
+  background-color: #313131;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headerTitleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.headerTitle a {
+  margin-top: 10%;
+}
+
+header .button {
+  background: #ff3057;
+  color: #ffffff;
+  padding: 20px 50px 20px 15px;
+  text-transform: uppercase;
+}
+
+.topHeaderNav {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.headerNav ul {
+  display: flex;
+}
+
+.topHeaderNav a {
+  position: relative;
+}
+.topHeaderNav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.topHeaderNav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.headerNavSocial {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.headerNavSocial li {
+  transform: rotate(270deg);
+}
+
+.aboutMe {
+  display: flex;
+}
+
+.headshotImage img {
+  width: 300px;
+}
+
+.headshotImage p {
+  transform: rotate(270deg);
+  min-height: 20px;
+  width: 100px;
+  border: 2px solid tomato;
+  color: #999999;
+}
+
+/*# sourceMappingURL=style.css.map */

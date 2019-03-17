@@ -1,0 +1,10 @@
+.headerNavSocial {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.headerNavSocial li {
+    transform: rotate(270deg);
+}

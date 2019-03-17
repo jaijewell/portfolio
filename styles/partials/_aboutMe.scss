@@ -1,0 +1,79 @@
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headshotImage {
+  position: relative;
+  // border: 2px solid skyblue;
+}
+
+.headshotImage img {
+  width: 300px;
+  // border: 2px solid turquoise;
+}
+
+.headshotImage p {
+  text-transform: uppercase;
+  position: absolute;
+  top: 55px;
+  left: -80px;
+  transform: rotate(270deg);
+  min-height: 20px;
+  // border: 2px solid tomato;
+  color: $tertiaryColour;
+}
+
+.text {
+  // border: 2px solid plum;
+  margin: auto 0;
+  padding-left: 50px;
+  position: relative;
+}
+
+.text span {
+  // border: 2px solid orange;
+  color: $primaryAccent;
+}
+
+.text h2 {
+  // border: 2px solid purple;
+  color: $primaryAccent;
+}
+
+.text p {
+  // border: 2px solid blueviolet;
+}
+
+//triangle decoration styling
+.triangle {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.triangle1 {
+  position: absolute;
+  top: -90px;
+  right: -80px;
+  transform: rotate(-60deg);
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 145px;
+  border-left-width: 145px;
+  border-bottom: solid 180px rgba(255, 48, 87, 0.05);
+}
+.triangle2 {
+  border: 2px solid green;
+  position: absolute;
+  right: -155px;
+  top: 10px;
+  transform: rotate(225deg);
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 155px;
+  border-left-width: 155px;
+  border-bottom: solid 180px rgba(255, 48, 87, 0.05);
+}

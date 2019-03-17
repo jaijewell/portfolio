@@ -1,0 +1,97 @@
+.wrapper {
+  padding: 5% 10% 10% 10%;
+  // border: 2px solid turquoise;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+// nav {
+//     border: 2px solid skyblue;
+// }
+
+ul {
+  list-style: none;
+  // border: 2px solid peachpuff;
+}
+
+a {
+  text-decoration: none;
+  padding: 15px;
+  color: $primaryColour;
+  // border: 2px solid tomato;
+}
+
+span {
+  color: $secondaryAccent;
+  // border: 2px solid yellow;
+}
+
+//layout styling for all sections begins here
+.sectionLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHeader {
+  padding: 2% 10%;
+}
+
+.sectionContent {
+  background: #fafafa;
+  padding: 15% 20%;
+  display: flex;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: inset 0 -1px 6px 0px $tertiaryColour;
+  h2 {
+    color: $tertiaryColour;
+  }
+}
+
+.sectionHeader h2.sectionNumber {
+    &::after {
+        padding-bottom:10px;
+    }
+}
+
+.sectionNumber {
+  display: flex;
+  align-items: center;
+  &::after {
+    content: "\2015";
+  }
+}
+
+.sectionDesc h2 {
+  text-align: right;
+}
+//added to typography section
+// .sectionDesc {
+//   h2 {
+//     @include fontSize(18);
+//     text-transform: uppercase;
+//   }
+
+//   span {
+//     display: block;
+//     color: #1a1a1a;
+//     text-transform: lowercase;
+//     @include fontSize(28);
+//     @include lineHeight(28);
+//   }
+// }
+
+.text h3, 
+.text p {
+    padding: 10px 0;
+}

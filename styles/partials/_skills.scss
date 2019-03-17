@@ -1,0 +1,33 @@
+.skills {
+    padding: 5% 10%;
+    background: $quaternaryColour;
+}
+
+.skillsList {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.skills h2 {
+    text-align: center;
+    padding: 0 0 5% 0;
+}
+
+.skills li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills i {
+    color: $secondaryAccent;
+    @include fontSize (60);
+}
+
+.skills span {
+    color: $primaryColour;
+    padding: 15px 0;
+}

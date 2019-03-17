@@ -1,0 +1,110 @@
+h1,
+h2,
+h3,
+p,
+a {
+  color: $primaryColour;
+}
+
+a,
+p {
+  letter-spacing: 2.5px;
+}
+
+h1 {
+  @include fontSize(120);
+  @include lineHeight(120);
+  font-family: $displayFont;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+body {
+  font-family: $bodyFont;
+}
+
+.headerNav li {
+  @include fontSize(20);
+  font-family: $displayFont;
+  font-weight: 400;
+}
+
+.headerNavSocial li {
+  @include fontSize(16);
+  font-weight: 500;
+}
+
+header h2 {
+  @include fontSize(36);
+  font-weight: 500;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+header .button {
+  font-weight: 700;
+}
+//global font sizes and typography styles for section headers
+.sectionHeader h2.sectionNumber {
+  font-family: $displayFont;
+  font-weight: 300;
+  @include fontSize(50);
+  &::after {
+    padding-left: 10px;
+    @include fontSize(36);
+  }
+}
+
+.sectionDesc h2 {
+  @include fontSize(18);
+  @include lineHeight(18);
+  font-family: $bodyFont;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sectionDesc span {
+  font-family: $displayFont;
+  font-weight: 400;
+  @include fontSize(28);
+  @include lineHeight(28);
+  text-transform: lowercase;
+  display: block;
+  color: #1a1a1a;
+}
+
+//global font sizes and typography styles for section headers and text
+.text h2 {
+  @include fontSize(33);
+  @include lineHeight(33);
+  font-style: bold;
+}
+
+.text span {
+  display: block;
+}
+
+.text h3, 
+.text p {
+    color: $quaternaryColour;
+}
+
+.text h3 {
+    font-family: $displayFont;
+    @include fontSize(20);
+    @include lineHeight(20);
+}
+
+.text p {
+    @include fontSize(18);
+    @include lineHeight(18);
+    font-family: $secondaryBodyFont;
+}
+
+//skills section typography
+.skills h2 {
+    @include fontSize(33);
+}
+
