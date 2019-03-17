@@ -12,10 +12,6 @@ ul {
   padding: 0;
 }
 
-// nav {
-//     border: 2px solid skyblue;
-// }
-
 ul {
   list-style: none;
   // border: 2px solid peachpuff;
@@ -39,14 +35,15 @@ span {
   flex-direction: column;
 }
 
-.sectionHeader {
-  padding: 2% 10%;
-}
-
 .sectionContent {
   background: #fafafa;
   padding: 15% 20%;
   display: flex;
+}
+
+// header styling for each section
+.sectionHeader {
+  padding: 2% 10%;
 }
 
 .sectionHeader {
@@ -59,9 +56,9 @@ span {
 }
 
 .sectionHeader h2.sectionNumber {
-    &::after {
-        padding-bottom:10px;
-    }
+  &::after {
+    padding-bottom: 10px;
+  }
 }
 
 .sectionNumber {
@@ -75,23 +72,32 @@ span {
 .sectionDesc h2 {
   text-align: right;
 }
-//added to typography section
-// .sectionDesc {
-//   h2 {
-//     @include fontSize(18);
-//     text-transform: uppercase;
-//   }
 
-//   span {
-//     display: block;
-//     color: #1a1a1a;
-//     text-transform: lowercase;
-//     @include fontSize(28);
-//     @include lineHeight(28);
-//   }
-// }
-
-.text h3, 
+.text h3,
 .text p {
-    padding: 10px 0;
+  padding: 10px 0;
+}
+
+// global accessibility styling
+header .button,
+[type="submit"],
+.headerNavSocial a {
+  transition: $transitionDetail;
+}
+//hover states
+.headerNavSocial a:hover {
+  color: $secondaryAccent;
+}
+
+header .button:hover,
+[type="submit"]:hover {
+  background-color: $secondaryAccent;
+}
+
+//focus states
+[type="text"]:focus,
+[type="email"]:focus,
+[type="submit"]:focus,
+a:focus {
+  border: 2px solid $secondaryAccent;
 }

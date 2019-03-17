@@ -135,6 +135,7 @@
             <div class="sectionDesc">
               <h2>bold, complex,sweet<span> my latest works</span></h2>
             </div>
+          </div><!-- sectionHeader ends here -->
         <div class="work1">
           <div class="text">
             <h3>title</h3>
@@ -145,52 +146,61 @@
             </p>
           </div>
           <img src="" alt="" />
-        </div>
+        </div> <!-- work1 ends here -->
         <div class="work2">
           <img src="" alt="" />
-          <h3>title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            illum incidunt voluptates quo ipsa, id asperiores, dolore unde
-            possimus veritatis quae nam ea nostrum illo.
-          </p>
-        </div>
+          <div class="text">
+            <h3>title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+              illum incidunt voluptates quo ipsa, id asperiores, dolore unde
+              possimus veritatis quae nam ea nostrum illo.
+            </p>
+          </div> <!-- .text ends here -->
+        </div> <!-- work2 ends here -->
         <div class="work3">
-          <h3>title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            illum incidunt voluptates quo ipsa, id asperiores, dolore unde
-            possimus veritatis quae nam ea nostrum illo.
-          </p>
+          <div class="text">
+            <h3>title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+              illum incidunt voluptates quo ipsa, id asperiores, dolore unde
+              possimus veritatis quae nam ea nostrum illo.
+            </p>
+          </div> <!-- .text ends here -->
           <img src="" alt="" />
-        </div>
+        </div> <!-- work3 ends here -->
         <div class="work4">
           <img src="" alt="" />
-          <h3>title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            illum incidunt voluptates quo ipsa, id asperiores, dolore unde
-            possimus veritatis quae nam ea nostrum illo.
-          </p>
+          <div class="text">
+            <h3>title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+              illum incidunt voluptates quo ipsa, id asperiores, dolore unde
+              possimus veritatis quae nam ea nostrum illo.
+            </p>
+          </div>
         </div>
       </section>
 
       <section class="contact">
         
-        <form action="">
-          <h3>Write me</h3>
+        <form action="mailto:jaimie@jaimiejewell.com" method="GET"">
+          <h3>Say hello!</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit
-            odio commodi iste, officia qui quidem neque amet a sint ipsam tempore,
-            ab delectus similique inventore earum debitis quod tempora.
+            jaimie@jaimiejewell.com
           </p>
           <label for="name">Your name</label>
           <input type="text" id="name" placeholder="Jane Doe" />
           <label for="email">Your email</label>
           <input type="email" id="email" placeholder="example@email.com" />
-          <label for="message">Your Message</label>
-          <input type="text" id="message" placeholder="message here" />
-          <input type="submit" value="send" />
+          <label class ="messageInput" for="message">Your Message</label>
+          <input class="userMessage" type="text" id="message" placeholder="message here" />
+          
+          <label for="submitMessage" class="visuallyHidden">Submit</label>
+          <button class="submit" id=submitMessage type="submit">
+            send
+            <img src="assets/send.svg" alt="send message icon">
+          </button>
         </form>
       </section>
     </main>

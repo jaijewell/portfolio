@@ -127,20 +127,30 @@ header .button {
 }
 
 .contact label {
+    color: $primaryColour;
     font-family: $bodyFont;
     @include fontSize(20);
     font-weight: 500;
+    text-transform: uppercase;
+}
+
+.contact input[type="text"],
+.contact input[type="email"] {
+    color: $primaryColour;
 }
 
 .contact input[type="text"]::placeholder,
 .contact input[type="email"]::placeholder {
+    color: $primaryColour;
     font-family: $secondaryBodyFont;
     @include fontSize(18);
     font-style: italic;
 }
 
-input[type="submit"] {
+button[type="submit"] {
     background: $primaryAccent;
+    color: $primaryColour;
+    text-transform: uppercase;
 }
 //footer typography styling
 footer {
