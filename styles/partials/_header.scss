@@ -1,6 +1,8 @@
 header {
     min-height: 100vh;
     background-color: $secondaryColour;
+    background-image: url('/assets/sqwiggleylines.png');
+    background-position: left bottom;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

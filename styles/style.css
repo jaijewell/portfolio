@@ -433,6 +433,8 @@ footer i {
 header {
   min-height: 100vh;
   background-color: #313131;
+  background-image: url("/assets/sqwiggleylines.png");
+  background-position: left bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
