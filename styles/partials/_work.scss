@@ -1,0 +1,16 @@
+.work {
+    position: relative;
+    z-index: 100;
+}
+
+.sectionDecor {
+    z-index: 0;
+    background: url(../assets/sectionLines.svg) no-repeat;
+    color: $secondaryAccent;
+    background-position: right bottom;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 200px;
+}

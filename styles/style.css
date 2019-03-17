@@ -433,8 +433,6 @@ footer i {
 header {
   min-height: 100vh;
   background-color: #313131;
-  background-image: url("/assets/sqwiggleylines.png");
-  background-position: left bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,7 +442,8 @@ header {
   flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: relative; }
 
 .headerTitleContainer {
   display: -webkit-box;
@@ -464,7 +463,8 @@ header {
   flex-direction: column;
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: flex-start; }
+  align-items: flex-start;
+  z-index: 100; }
   .headerTitle a {
     margin-top: 10%; }
 
@@ -473,6 +473,15 @@ header .button {
   color: #ffffff;
   padding: 20px 50px 20px 15px;
   text-transform: uppercase; }
+
+.headerDecor {
+  background: url(../assets/headerLines.png);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1000px;
+  height: 630px;
+  opacity: 0.45; }
 
 .topHeaderNav {
   display: -webkit-box;
@@ -640,6 +649,21 @@ header .button {
 .skills span {
   color: #ffffff;
   padding: 15px 0; }
+
+.work {
+  position: relative;
+  z-index: 100; }
+
+.sectionDecor {
+  z-index: 0;
+  background: url(../assets/sectionLines.svg) no-repeat;
+  color: #30d2a5;
+  background-position: right bottom;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  height: 200px; }
 
 .contact {
   background-color: #0b0b0b; }
