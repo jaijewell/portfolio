@@ -111,7 +111,37 @@ header .button {
     @include fontSize(33);
 }
 
+//contact typography styling 
+.contact h3 {
+ font-family: $bodyFont;
+ @include fontSize(36);
+ @include lineHeight(36);
+ font-weight: 700;  
+}
 
+.contact p {
+    font-family: $displayFont;
+    @include fontSize(24);
+    @include lineHeight(24);
+    font-weight: 400;
+}
+
+.contact label {
+    font-family: $bodyFont;
+    @include fontSize(20);
+    font-weight: 500;
+}
+
+.contact input[type="text"]::placeholder,
+.contact input[type="email"]::placeholder {
+    font-family: $secondaryBodyFont;
+    @include fontSize(18);
+    font-style: italic;
+}
+
+input[type="submit"] {
+    background: $primaryAccent;
+}
 //footer typography styling
 footer {
     font-family: $secondaryBodyFont;
