@@ -7,7 +7,7 @@ $secondaryAccent: #30d2a5; //teal
 $displayFont: 'Comfortaa', cursive;
 $bodyFont: 'Maven Pro', sans-serif;
 $secondaryBodyFont: 'Raleway', sans-serif;
-// $transitionDetail: .4s ease-in-out;
+$transitionDetail: .3s ease-in-out;
 
 @mixin fontSize($sizeValue){
   font-size: $sizeValue * 1px;

@@ -335,6 +335,16 @@ header .button {
   font-size: 33px;
   font-size: 1.65rem; }
 
+footer {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-size: 0.8rem;
+  font-weight: 400; }
+
+footer i {
+  font-size: 20px;
+  font-size: 1rem; }
+
 header {
   min-height: 100vh;
   background-color: #313131;
@@ -540,3 +550,36 @@ header .button {
 .skills span {
   color: #ffffff;
   padding: 15px 0; }
+
+footer {
+  background-color: #ff3057;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 25px 10%; }
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+footer i {
+  color: #ffffff;
+  padding: 0 10px;
+  width: 100%; }
+
+footer li a {
+  padding: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+
+footer li i:hover {
+  color: #0b0b0b;
+  cursor: pointer; }

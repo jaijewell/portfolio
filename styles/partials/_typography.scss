@@ -1,3 +1,5 @@
+
+//general body typography
 h1,
 h2,
 h3,
@@ -23,6 +25,7 @@ body {
   font-family: $bodyFont;
 }
 
+//header typography
 .headerNav li {
   @include fontSize(20);
   font-family: $displayFont;
@@ -106,5 +109,17 @@ header .button {
 //skills section typography
 .skills h2 {
     @include fontSize(33);
+}
+
+
+//footer typography styling
+footer {
+    font-family: $secondaryBodyFont;
+    @include fontSize(16);
+    font-weight: 400;
+}
+
+footer i {
+    @include fontSize(20);
 }
 
