@@ -563,9 +563,11 @@ header .button {
   min-height: 20px;
   color: #999999; }
 
-.text {
+.intro {
   margin: auto 0;
-  padding-left: 50px;
+  padding-left: 50px; }
+
+.text {
   position: relative; }
 
 .text span {
@@ -656,14 +658,43 @@ header .button {
 
 .sectionDecor {
   z-index: 0;
-  background: url(../assets/sectionLines.svg) no-repeat;
+  background: url(../assets/sectionLines4.png) no-repeat;
   color: #30d2a5;
   background-position: right bottom;
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 500px;
+  width: 800px;
   height: 200px; }
+
+.portfolioPieceContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 2px solid green; }
+
+.portfolioPiece {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border: 2px solid red; }
+
+.text {
+  border: 2px solid skyblue; }
+  .text h3 {
+    border: 2px solid brown; }
+  .text p {
+    border: 2px solid orange; }
+
+.workPreview {
+  border: 2px solid peru; }
 
 .contact {
   background-color: #0b0b0b; }
