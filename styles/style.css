@@ -157,11 +157,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden; }
 
 .wrapper {
-  padding: 5% 10% 10% 10%; }
+  padding: 5% 10% 5% 10%; }
 
 h1,
 h2,
 h3,
+h4,
 p,
 ul {
   margin: 0;
@@ -178,6 +179,25 @@ a {
 span {
   color: #30d2a5; }
 
+.arrowContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0; }
+
+.arrowIcon {
+  width: 5%; }
+
+.aboutMe a.arrowContainer,
+.work a.arrowContainer {
+  background: #fafafa; }
+
+.contact a.arrowContainer {
+  background: #0b0b0b; }
+
 .sectionLayout {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,13 +209,13 @@ span {
 
 .sectionContent {
   background: #fafafa;
-  padding: 15% 20%;
+  padding: 10% 12%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .sectionHeader {
-  padding: 2% 10%; }
+  padding: 1% 10%; }
 
 .sectionHeader {
   display: -webkit-box;
@@ -261,10 +281,10 @@ p {
   letter-spacing: 2.5px; }
 
 h1 {
-  font-size: 120px;
-  font-size: 6rem;
-  line-height: 192;
-  line-height: 9.6rem;
+  font-size: 160px;
+  font-size: 8rem;
+  line-height: 256;
+  line-height: 12.8rem;
   font-family: "Comfortaa", cursive;
   font-weight: 700;
   text-transform: lowercase; }
@@ -273,19 +293,20 @@ body {
   font-family: "Maven Pro", sans-serif; }
 
 .headerNav li {
-  font-size: 20px;
-  font-size: 1rem;
+  font-size: 32px;
+  font-size: 1.6rem;
   font-family: "Comfortaa", cursive;
   font-weight: 400; }
 
 .headerNavSocial li {
-  font-size: 16px;
-  font-size: 0.8rem;
-  font-weight: 500; }
+  font-size: 24px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase; }
 
 header h2 {
-  font-size: 36px;
-  font-size: 1.8rem;
+  font-size: 56px;
+  font-size: 2.8rem;
   font-weight: 500; }
   header h2 span {
     font-weight: 700; }
@@ -296,18 +317,18 @@ header .button {
 .sectionHeader h2.sectionNumber {
   font-family: "Comfortaa", cursive;
   font-weight: 300;
-  font-size: 50px;
-  font-size: 2.5rem; }
+  font-size: 60px;
+  font-size: 3rem; }
   .sectionHeader h2.sectionNumber::after {
     padding-left: 10px;
-    font-size: 36px;
-    font-size: 1.8rem; }
+    font-size: 50px;
+    font-size: 2.5rem; }
 
 .sectionDesc h2 {
-  font-size: 18px;
-  font-size: 0.9rem;
-  line-height: 28.8;
-  line-height: 1.44rem;
+  font-size: 28px;
+  font-size: 1.4rem;
+  line-height: 44.8;
+  line-height: 2.24rem;
   font-family: "Maven Pro", sans-serif;
   font-weight: 500;
   text-transform: uppercase; }
@@ -315,23 +336,20 @@ header .button {
 .sectionDesc span {
   font-family: "Comfortaa", cursive;
   font-weight: 400;
-  font-size: 28px;
-  font-size: 1.4rem;
-  line-height: 44.8;
-  line-height: 2.24rem;
+  font-size: 42px;
+  font-size: 2.1rem;
+  line-height: 67.2;
+  line-height: 3.36rem;
   text-transform: lowercase;
   display: block;
   color: #1a1a1a; }
 
 .text h2 {
-  font-size: 33px;
-  font-size: 1.65rem;
-  line-height: 52.8;
-  line-height: 2.64rem;
+  font-size: 50px;
+  font-size: 2.5rem;
+  line-height: 80;
+  line-height: 4rem;
   font-style: bold; }
-
-.text span {
-  display: block; }
 
 .text h3,
 .text p {
@@ -339,21 +357,35 @@ header .button {
 
 .text h3 {
   font-family: "Comfortaa", cursive;
-  font-size: 20px;
-  font-size: 1rem;
-  line-height: 32;
-  line-height: 1.6rem; }
+  font-size: 32px;
+  font-size: 1.6rem;
+  line-height: 51.2;
+  line-height: 2.56rem; }
 
 .text p {
-  font-size: 18px;
-  font-size: 0.9rem;
-  line-height: 28.8;
-  line-height: 1.44rem;
+  font-size: 24px;
+  font-size: 1.2rem;
+  line-height: 38.4;
+  line-height: 1.92rem;
   font-family: "Raleway", sans-serif; }
 
 .skills h2 {
   font-size: 33px;
   font-size: 1.65rem; }
+
+.portfolioPiece .text h3 {
+  font-size: 40px;
+  font-size: 2rem;
+  font-family: "Maven Pro", sans-serif; }
+
+.portfolioPiece .text h4 {
+  font-size: 24px;
+  font-size: 1.2rem;
+  line-height: 38.4;
+  line-height: 1.92rem; }
+
+.portfolioPiece .text p {
+  font-family: "Raleway", sans-serif; }
 
 .contact h3 {
   font-family: "Maven Pro", sans-serif;
@@ -433,6 +465,7 @@ footer i {
 header {
   min-height: 100vh;
   background-color: #313131;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,8 +475,7 @@ header {
   flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  position: relative; }
+  justify-content: space-between; }
 
 .headerTitleContainer {
   display: -webkit-box;
@@ -533,10 +565,14 @@ header .button {
 .headerNavSocial li {
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
-  transform: rotate(270deg); }
+  transform: rotate(270deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .headerNavSocial a {
-  padding-right: inherit; }
+  padding: 0;
+  margin-top: 30px; }
 
 .aboutMe {
   display: -webkit-box;
@@ -555,8 +591,8 @@ header .button {
 .headshotImage p {
   text-transform: uppercase;
   position: absolute;
-  top: 55px;
-  left: -80px;
+  top: 84px;
+  left: -109px;
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
@@ -565,10 +601,14 @@ header .button {
 
 .intro {
   margin: auto 0;
-  padding-left: 50px; }
-
-.text {
+  padding-left: 50px;
   position: relative; }
+
+.arrowContainer:not(.contact .arrowContainer) {
+  background: #fafafa; }
+
+.arrowIcon {
+  width: 5%; }
 
 .text span {
   color: #ff3057; }
@@ -583,32 +623,32 @@ header .button {
 
 .triangle1 {
   position: absolute;
-  top: -90px;
-  right: -80px;
+  top: -180px;
+  right: -170px;
   -webkit-transform: rotate(-60deg);
   -ms-transform: rotate(-60deg);
   transform: rotate(-60deg);
   width: 0;
   height: 0;
   border: 0 solid transparent;
-  border-right-width: 145px;
-  border-left-width: 145px;
-  border-bottom: solid 180px rgba(255, 48, 87, 0.05); }
+  border-right-width: 250px;
+  border-left-width: 250px;
+  border-bottom: solid 285px rgba(255, 48, 87, 0.05); }
 
 .triangle2 {
   border: 2px solid green;
   position: absolute;
-  right: -155px;
-  top: 10px;
+  right: -160px;
+  top: -30px;
   -webkit-transform: rotate(225deg);
   -ms-transform: rotate(225deg);
   transform: rotate(225deg);
   width: 0;
   height: 0;
   border: 0 solid transparent;
-  border-right-width: 155px;
-  border-left-width: 155px;
-  border-bottom: solid 180px rgba(255, 48, 87, 0.05); }
+  border-right-width: 255px;
+  border-left-width: 255px;
+  border-bottom: solid 285px rgba(255, 48, 87, 0.05); }
 
 .skills {
   padding: 5% 10%;
@@ -658,24 +698,27 @@ header .button {
 
 .sectionDecor {
   z-index: 0;
-  background: url(../assets/sectionLines4.png) no-repeat;
+  background: url(../assets/Layer2squigglys.png) no-repeat;
   color: #30d2a5;
   background-position: right bottom;
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 800px;
-  height: 200px; }
+  width: 350px;
+  height: 630px; }
+
+.worksSectionTitle h2 {
+  padding: 5% 0; }
 
 .portfolioPieceContainer {
+  padding-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  border: 2px solid green; }
+  flex-direction: column; }
 
 .portfolioPiece {
   display: -webkit-box;
@@ -684,20 +727,52 @@ header .button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border: 2px solid red; }
+  z-index: 100;
+  padding: 5% 0; }
 
-.text {
-  border: 2px solid skyblue; }
-  .text h3 {
-    border: 2px solid brown; }
-  .text p {
-    border: 2px solid orange; }
+.work1 .text, .work3 .text {
+  padding-right: 75px; }
 
-.workPreview {
-  border: 2px solid peru; }
+.work2 .text, .work4 .text {
+  padding-left: 75px; }
+
+.portfolioPiece .text h3 {
+  padding-top: 65px; }
+
+.portfolioPiece .text p a {
+  color: #0b0b0b;
+  padding: 0; }
+  .portfolioPiece .text p a:hover {
+    color: #ff3057; }
+
+.workPreview a {
+  padding: 0; }
+
+.workPreview img {
+  min-width: 500px;
+  min-height: 420px; }
+
+.previewButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.text a.view {
+  background: #ff3057;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  margin-right: 10px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+  .text a.view:hover {
+    background: #30d2a5; }
 
 .contact {
-  background-color: #0b0b0b; }
+  background-color: #0b0b0b;
+  position: relative; }
 
 .contact form {
   padding: 50px 0;
@@ -712,7 +787,8 @@ header .button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 100; }
 
 .contact h3 {
   padding-bottom: 10px; }
@@ -734,7 +810,8 @@ header .button {
   border-top: none;
   border-right: none;
   border-left: none;
-  background: #0b0b0b; }
+  background: transparent;
+  z-index: 100; }
 
 button[type="submit"] {
   padding: 15px 50px 15px 15px;
@@ -745,11 +822,26 @@ button[type="submit"] {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: none; }
+  border: none;
+  z-index: 100; }
 
 button img {
   width: 18px;
   margin: 5px 0 0 5px; }
+
+.contactDecor {
+  background: url(../assets/headerLines.png) no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 800px;
+  height: 530px;
+  opacity: 0.45;
+  z-index: 0; }
+
+.contact .arrowContainer {
+  background: transparent;
+  text-align: center; }
 
 footer {
   background-color: #ff3057;

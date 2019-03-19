@@ -1,11 +1,12 @@
 .wrapper {
-  padding: 5% 10% 10% 10%;
+  padding: 5% 10% 5% 10%;
   // border: 2px solid turquoise;
 }
 
 h1,
 h2,
 h3,
+h4,
 p,
 ul {
   margin: 0;
@@ -29,6 +30,27 @@ span {
   // border: 2px solid yellow;
 }
 
+//navigation arrow styling 
+.arrowContainer {
+
+  display: flex;
+  justify-content: center;
+  padding: 0;
+ 
+}
+.arrowIcon {
+  width: 5%;
+}
+
+.aboutMe a.arrowContainer,
+.work a.arrowContainer {
+  background: $lightBgColour;
+}
+
+.contact a.arrowContainer {
+  background: $quaternaryColour;
+}
+
 //layout styling for all sections begins here
 .sectionLayout {
   display: flex;
@@ -36,14 +58,14 @@ span {
 }
 
 .sectionContent {
-  background: #fafafa;
-  padding: 15% 20%;
+  background: $lightBgColour;
+  padding: 10% 12%;
   display: flex;
 }
 
 // header styling for each section
 .sectionHeader {
-  padding: 2% 10%;
+  padding: 1% 10%;
 }
 
 .sectionHeader {
@@ -101,3 +123,4 @@ header .button:hover,
 a:focus {
   border: 2px solid $secondaryAccent;
 }
+

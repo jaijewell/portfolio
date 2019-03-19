@@ -14,8 +14,8 @@ p {
 }
 
 h1 {
-  @include fontSize(120);
-  @include lineHeight(120);
+  @include fontSize(160);
+  @include lineHeight(160);
   font-family: $displayFont;
   font-weight: 700;
   text-transform: lowercase;
@@ -27,18 +27,19 @@ body {
 
 //header typography
 .headerNav li {
-  @include fontSize(20);
+  @include fontSize(32);
   font-family: $displayFont;
   font-weight: 400;
 }
 
 .headerNavSocial li {
-  @include fontSize(16);
+  @include fontSize(24);
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 header h2 {
-  @include fontSize(36);
+  @include fontSize(56);
   font-weight: 500;
 
   span {
@@ -53,16 +54,16 @@ header .button {
 .sectionHeader h2.sectionNumber {
   font-family: $displayFont;
   font-weight: 300;
-  @include fontSize(50);
+  @include fontSize(60);
   &::after {
     padding-left: 10px;
-    @include fontSize(36);
+    @include fontSize(50);
   }
 }
 
 .sectionDesc h2 {
-  @include fontSize(18);
-  @include lineHeight(18);
+  @include fontSize(28);
+  @include lineHeight(28);
   font-family: $bodyFont;
   font-weight: 500;
   text-transform: uppercase;
@@ -71,8 +72,8 @@ header .button {
 .sectionDesc span {
   font-family: $displayFont;
   font-weight: 400;
-  @include fontSize(28);
-  @include lineHeight(28);
+  @include fontSize(42);
+  @include lineHeight(42);
   text-transform: lowercase;
   display: block;
   color: #1a1a1a;
@@ -80,13 +81,9 @@ header .button {
 
 //global font sizes and typography styles for section headers and text
 .text h2 {
-  @include fontSize(33);
-  @include lineHeight(33);
+  @include fontSize(50);
+  @include lineHeight(50);
   font-style: bold;
-}
-
-.text span {
-  display: block;
 }
 
 .text h3, 
@@ -96,13 +93,13 @@ header .button {
 
 .text h3 {
     font-family: $displayFont;
-    @include fontSize(20);
-    @include lineHeight(20);
+    @include fontSize(32);
+    @include lineHeight(32);
 }
 
 .text p {
-    @include fontSize(18);
-    @include lineHeight(18);
+    @include fontSize(24);
+    @include lineHeight(24);
     font-family: $secondaryBodyFont;
 }
 
@@ -112,9 +109,25 @@ header .button {
 }
 
 
+//work sectionLayout typography
 
+.portfolioPiece .text {
+  h3 {
+    @include fontSize(40);
+    font-family: $bodyFont;
 
+  }
+  
+  h4{
+    @include fontSize(24);
+    @include lineHeight(24);
+  }
 
+  p {
+    font-family: $secondaryBodyFont;
+  }
+
+}
 
 
 //contact typography styling 

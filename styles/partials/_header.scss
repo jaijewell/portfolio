@@ -1,16 +1,18 @@
 header {
     min-height: 100vh;
     background-color: $secondaryColour;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
-
 }
+
+
 
 .headerTitleContainer {
     display: flex;
     justify-content: space-between;
+    // padding-top: 300px;
 }
 
 .headerTitle {
@@ -19,8 +21,6 @@ header {
     align-items: flex-start;
     z-index: 100;
     
-    
-
     a {
         margin-top: 10%;
     }

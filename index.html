@@ -33,11 +33,15 @@
     <title>Jaimie Jewell</title>
   </head>
   <body>
-    <header class="wrapper">
+
+<!-- HEADER -->
+    <header class="wrapper" id="home">
+
       <div class="topHeaderNav">  
         <div class="logo">
-          <p>JJ</p>
+          <p>LOGO</p>
         </div>
+  <!-- HEADER NAV -->
         <nav class="headerNav">
           <ul>
             <li><a href="#">home</a></li>
@@ -48,16 +52,18 @@
           </ul>
         </nav>
       </div>
+  <!-- HEADER TITLE -->
       <div class="headerTitleContainer">
         <div class="headerTitle"> 
           <h1>Jaimie Jewell</h1>
           <h2><span>front-end </span>web developer</h2>
-          <a href="#" class="button">Find out more!</a>
+          <a href="#aboutMe" class="button">Find out more!</a>
+        
         </div>
         <div class="headerDecor">
           <!-- empty div for decorative header image -->
         </div>
-       
+    <!-- HEADER NAV - SOCIAL MEDIA -->
         <ul class="headerNavSocial">
           <li><a href="https://twitter.com/jaimiecodes">twitter</a></li>
           <li>
@@ -65,10 +71,11 @@
           </li>
         </ul>
       </div>
-      
-    </header>
+    </header> 
+<!-- MAIN CONTENT BEGINS HERE -->
     <main>
-      <section class="aboutMe sectionLayout">
+  <!-- ABOUT ME -->
+      <section class="aboutMe sectionLayout" id="aboutMe">
         <div class="sectionHeader">
           <!-- add after element of the -- after 01 -->
           <h2 class="sectionNumber">01</h2>
@@ -76,31 +83,35 @@
             <h2>long story short<span> let's talk about me</span></h2>
           </div>
         </div>
+  <!-- ABOUT ME CONTENT -->
         <div class="sectionContent">
           <div class="headshotImage">
-            <p>ready to go</p>
+            <p>a little about me</p>
             <img
               src="./assets/headshot.jpg"
               alt="headshot of jaimie jewell, web developer"
             />
           </div>
           <div class="text intro">
-            <h2>Hi! My name is Jaimie <span>Let me introduce myself.</span></h2>
-            <h3>some header quote here her is another line another line another line here it is</h3>
+            <h2>Hi! My name is Jaimie</h2>
+            <h3>here is a tag line and isn't it great. i love gravy. open to suggestions</h3>
             <p>
-              Hi, I’m Jaimie, a front-end developer based in
-              Toronto....Passionate about life long learning, forever improving
-              and learning new skills. Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Praesentium animi officiis eius impedit autem
-              alias in ipsa, quis quia commodi optio consequuntur repudiandae
-              rerum nesciunt
+              I am a highly motivated front-end developer based in Toronto. A recent graduate of the HackerYou Immersive Web Development Program, I'm constantly seeking out new skills and opportunities to help me become more a more well-rounded programmer. I'm currently participting in the 100 days of code challenge! When I'm not coding, you can find me walking my dog, enjoying the outdoors or planning my next adventure.   
             </p>
-              <div class="triangle triangle1"></div>
-              <div class="triangle triangle2"></div>
+              <div class="triangle triangle1">
+                <!-- empty div for triangle shape decoration -->
+              </div>
+              <div class="triangle triangle2">
+                <!-- empty div for secondd triangle shape decoration -->
+              </div>
           </div>
         </div>
+        <a class="arrowContainer" href="#skills">
+          <img class="arrowIcon" id="arrow" src="./assets/doubleArrowDown.svg" alt="arrow to next section of website">
+        </a>
       </section>
-      <section class="skills">
+  <!-- SKILLS SECTION  -->
+      <section class="skills wrapper" id="skills">
         <h2>My Skills</h2>
         <ul class="skillsList">
           <li><i class="devicon-html5-plain devIcon"></i><span>HTML</span></li>
@@ -108,6 +119,9 @@
           <li>
             <i class="devicon-sass-original devIcon"></i><span>Sass</span>
           </li>
+          <!-- <li>
+            <img class="devIcon" src="assets/responsiveDesign.svg" alt="icon for responsive design skill"><span>Responsive Design</span>
+          </li> -->
           <li>
             <i class="devicon-javascript-plain devIcon"></i
             ><span>Javascript</span>
@@ -131,46 +145,50 @@
           </li>
         </ul>
       </section>
-
+  <!-- WORK SECTION -->
       <section class="work sectionLayout">
           <div class="sectionHeader">
             <!-- add after element of the -- after 02 -->
             <h2 class="sectionNumber">02</h2>
             <div class="sectionDesc">
-              <h2>bold, complex,sweet<span> my latest works</span></h2>
+              <h2>bold, complex, sweet<span> my latest works</span></h2>
             </div>
           </div><!-- sectionHeader ends here -->
+         
         <div class="portfolio portfolioPieceContainer sectionContent">
-<!-- work 1 -->
+          <div class="worksSectionTitle text">
+            <h2>Let me show you a few things I've been working on... </h2>
+          </div>
+    <!-- WORK 1 -->
           <div class="portfolioPiece work1">
             <div class="text">
               <h3>Fashion Forecast</h3>
               <h4> API / Ajax / HTML5 / CSS3 / SCSS / jQuery / Responsive</h4>
               <p>
                 Fashion inspiration generator that fetches the user's current weather conditions from the Apixu API; Based on the user’s current weather conditions, the Etsy API will return a suitable outfit. Pair
-                programmed with <a href="#">Jeannette Ng</a>
+                programmed with <a href="http://jeannetteng.com">Jeannette Ng</a>
               </p>
+              <div class="previewButtons">
+                <a class="
+                view" 
+                href="https://github.com/jaimiejewelljeannetteng/projectFour" target="_blank">GitHub</a>
+                <a class="
+                view" href="https://jaimiejewelljeannetteng.github.io/projectFour/" target="_blank">Live</a>
+              </div>
             </div>
             <div class="workPreview">
               <a href="https://jaimiejewelljeannetteng.github.io/projectFour/" target="_blank"> 
                 <img src="./assets/work1Mobile.png" alt="screenshot of work1 thumbnail 'Planted'" />
               </a>
-              <div class="previewButtons">
-                <a href="https://github.com/jaimiejewelljeannetteng/projectFour" target="_blank">GitHub</a>
-                <a href="https://jaimiejewelljeannetteng.github.io/projectFour/" target="_blank">Live</a>
-              </div>
+              
             </div> <!-- workPreview ends here -->
           </div> <!-- work1 ends here -->
-<!-- work 2  -->
+    <!-- WORK 2  -->
           <div class="portfolioPiece work2">
             <div class="workPreview">
               <a href="https://react-firebase-daeaf.firebaseapp.com" target="_blank">
-                <img src="./assets/work2Mobile.png" alt="screenshot of work1 thumbnail 'quick flick picker" />
+                <img src="./assets/NEWwork2Mobile-500x420.png" alt="screenshot of work1 thumbnail 'quick flick picker" />
               </a>
-              <div class="previewButtons">
-                <a href="https://github.com/quick-flick-picker/quickFlickPicker" target="_blank">GitHub</a>
-                <a href="https://react-firebase-daeaf.firebaseapp.com" target="_blank">Live</a>
-              </div>
             </div>
             <div class="text">
               <h3>Quick Flick Picker</h3>
@@ -179,9 +197,15 @@
                 An application that randomly selects a movie to watch based on user's provided criteria. Users can search movies, create or remove lists, and add or
                 remove movies from lists. This app was created using CSS float properties and media queries. Group programmed with <a href="">Jenna, </a> <a href="">Dan</a> and <a href="">Dennis</a>.
               </p>
+              <div class="previewButtons">
+                <a class="
+                view" href="https://github.com/quick-flick-picker/quickFlickPicker" target="_blank">GitHub</a>
+                <a class="
+                view" href="https://react-firebase-daeaf.firebaseapp.com" target="_blank">Live</a>
+              </div> <!-- preview buttons ends here -->
             </div> <!-- .text ends here -->
           </div> <!-- work2 ends here -->
-<!-- work 3 -->
+    <!-- WORK 3 -->
           <div class="portfolioPiece work3">
             <div class="text">
               <h3>Shake the Eight</h3>
@@ -189,27 +213,26 @@
               <p>
                 Enter your name and ask the Magic Eight ball a question to have your fate revealed.
               </p>
+              <div class="previewButtons">
+                <a class="
+                view" href="https://github.com/jaijewell/jaimie-jewell-project-three" target="_blank">GitHub</a>
+                <a class="
+                view" href=" https://jaijewell.github.io/jaimie-jewell-project-three/" target="_blank">Live</a>
+              </div> <!-- previewButtons ends here -->
             </div> <!-- .text ends here -->
             <div class="workPreview">
               <a href=" https://jaijewell.github.io/jaimie-jewell-project-three/" target="_blank">
                 <img src="./assets/work3Mobile.png" alt="screenshot of work1 thumbnail 'Planted'" />
               </a>
-              <div class="previewButtons">
-                <a href="https://github.com/jaijewell/jaimie-jewell-project-three" target="_blank">GitHub</a>
-                <a href=" https://jaijewell.github.io/jaimie-jewell-project-three/" target="_blank">Live</a>
-              </div> <!-- previewButtons ends here -->
+              
             </div> <!-- workPreview ends here -->
           </div> <!-- work3 ends here -->
-<!-- work4 -->
+    <!-- WORK 4 -->
           <div class="portfolioPiece work4">
             <div class="workPreview">
               <a href="https://jaijewell.github.io/jaimieJewellProjectTwo/" target="_blank">
-                <img src="./assets/work4Mobile.png" alt="screenshot of work1 thumbnail 'Planted'" />
+                <img src="./assets/NEWwork4Mobile-500x420.png" alt="screenshot of work1 thumbnail 'Planted'" />
               </a>
-              <div class="previewButtons">
-                <a href="https://github.com/jaijewell/jaimieJewellProjectTwo" target="_blank">GitHub</a>
-                <a href="https://jaijewell.github.io/jaimieJewellProjectTwo/" target="_blank">Live</a>
-              </div>
             </div> <!-- workPreview ends here -->
             <div class="text">
               <h3>Planted</h3>
@@ -217,34 +240,52 @@
               <p>
                 PSD design converted into pixel perfect,fully responsive site using flexbox for layout.
               </p>
+              <div class="previewButtons">
+                <a class="
+                view"  href="https://github.com/jaijewell/jaimieJewellProjectTwo" target="_blank">GitHub</a>
+                <a class="
+                view"  href="https://jaijewell.github.io/jaimieJewellProjectTwo/" target="_blank">Live</a>
+              </div>
+              <!-- previewButtons ends here -->
             </div> <!-- text ends here -->
           </div> <!-- portfolio portfolioPieces ends here -->
         </div> <!-- portfolioPiece container ends here -->
         <div class="sectionDecor">
           <!-- empty div for decorative section image -->
         </div>
+        <a class="arrowContainer" href="#contact">
+          <img class="arrowIcon" id="arrow" src="./assets/doubleArrowDown.svg" alt="arrow to next section of website">
+        </a>
       </section>
-      <section class="contact">
-        <form action="mailto:jaimie@jaimiejewell.com" method="GET"">
+  <!-- CONTACT SECTION -->
+      <section class="contact" id="contact">
+        <form action="https://formspree.io/jaimjewell@gmail.com" method="POST" />
           <h3>Say hello!</h3>
           <p>
             jaimie@jaimiejewell.com
           </p>
           <label for="name">Your name</label>
-          <input type="text" id="name" placeholder="Jane Doe" />
-          <label for="email">Your email</label>
-          <input type="email" id="email" placeholder="example@email.com" />
+          <input type="text" id="name" name="userName" placeholder="Jane Doe" />
+          <label for="email" >Your email</label>
+          <input type="email" id="email" placeholder="example@email.com" name="email"/>
           <label class ="messageInput" for="message">Your Message</label>
-          <input class="userMessage" type="text" id="message" placeholder="message here" />
+          <input name="message" class="userMessage" type="text" id="message" placeholder="message here" />
           
           <label for="submitMessage" class="visuallyHidden">Submit</label>
-          <button class="submit" id=submitMessage type="submit">
+          <button name="button" class="submit" id=submitMessage type="submit">
             send
             <img src="assets/send.svg" alt="send message icon">
           </button>
         </form>
+        <div class="contactDecor">
+          <!-- empty div for decorative header image -->
+        </div>
+        <a class="arrowContainer" href="#home">
+          <img class="arrowIcon" id="arrow" src="./assets/doubleArrowUp.svg" alt="arrow to website home">
+        </a>
       </section>
     </main>
+<!-- FOOTER -->
     <footer>
       <p>Jaimie Jewell © 2019</p>
       <ul>

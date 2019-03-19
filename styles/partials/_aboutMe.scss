@@ -16,24 +16,31 @@
 .headshotImage p {
   text-transform: uppercase;
   position: absolute;
-  top: 55px;
-  left: -80px;
+  top: 84px;
+  left: -109px;
   transform: rotate(270deg);
   min-height: 20px;
   // border: 2px solid tomato;
   color: $tertiaryColour;
 }
 
+//position: relative required to position triangles
 .intro {
   // border: 2px solid plum;
   margin: auto 0;
   padding-left: 50px;
+  position: relative;
   
 }
 
-.text {
-  position: relative;
+.arrowContainer:not(.contact .arrowContainer) {
+  background: $lightBgColour;
+ 
 }
+.arrowIcon {
+  width: 5%;
+}
+
 
 .text span {
   // border: 2px solid orange;
@@ -58,26 +65,26 @@
 
 .triangle1 {
   position: absolute;
-  top: -90px;
-  right: -80px;
+  top: -180px;
+  right: -170px;
   transform: rotate(-60deg);
   width: 0;
   height: 0;
   border: 0 solid transparent;
-  border-right-width: 145px;
-  border-left-width: 145px;
-  border-bottom: solid 180px rgba(255, 48, 87, 0.05);
+  border-right-width: 250px;
+  border-left-width: 250px;
+  border-bottom: solid 285px rgba(255, 48, 87, 0.05);
 }
 .triangle2 {
   border: 2px solid green;
   position: absolute;
-  right: -155px;
-  top: 10px;
+  right: -160px;
+  top: -30px;
   transform: rotate(225deg);
   width: 0;
   height: 0;
   border: 0 solid transparent;
-  border-right-width: 155px;
-  border-left-width: 155px;
-  border-bottom: solid 180px rgba(255, 48, 87, 0.05);
+  border-right-width: 255px;
+  border-left-width: 255px;
+  border-bottom: solid 285px rgba(255, 48, 87, 0.05);
 }
