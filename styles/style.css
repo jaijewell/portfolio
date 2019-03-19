@@ -604,12 +604,6 @@ header .button {
   padding-left: 50px;
   position: relative; }
 
-.arrowContainer:not(.contact .arrowContainer) {
-  background: #fafafa; }
-
-.arrowIcon {
-  width: 5%; }
-
 .text span {
   color: #ff3057; }
 
