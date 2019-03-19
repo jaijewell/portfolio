@@ -14,8 +14,8 @@ p {
 }
 
 h1 {
-  @include fontSize(160);
-  @include lineHeight(160);
+  @include fontSize(180);
+  @include lineHeight(180);
   font-family: $displayFont;
   font-weight: 700;
   text-transform: lowercase;
@@ -105,9 +105,17 @@ header .button {
 
 //skills section typography
 .skills h2 {
-    @include fontSize(33);
+    @include fontSize(50);
 }
 
+
+.skills span {
+  @include fontSize(24);
+}
+
+.skills i {
+  @include fontSize (100);
+}
 
 //work sectionLayout typography
 

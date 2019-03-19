@@ -27,9 +27,22 @@
 //position: relative required to position triangles
 .intro {
   // border: 2px solid plum;
+  z-index:100;
   margin: auto 0;
   padding-left: 50px;
   position: relative;
+
+  p a {
+    color: $quaternaryColour;
+    padding: 0;
+    z-index:200;
+   
+  }
+
+  a:hover {
+    color: $primaryAccent;
+    
+  }
   
 }
 
@@ -55,9 +68,11 @@
   position: relative;
   display: inline-block;
   margin: 0 5px;
+  z-index:0;
 }
 
 .triangle1 {
+  z-index:0;
   position: absolute;
   top: -180px;
   right: -170px;
@@ -70,6 +85,7 @@
   border-bottom: solid 285px rgba(255, 48, 87, 0.05);
 }
 .triangle2 {
+  z-index: 0;
   border: 2px solid green;
   position: absolute;
   right: -160px;
