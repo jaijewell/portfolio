@@ -45,7 +45,11 @@
   }
   
 }
-
+.aboutMe .sectionContent  {
+  background: $lightBgColour;
+  padding: 10% 12%;
+  display: flex;
+}
 
 
 
@@ -88,7 +92,7 @@
   z-index: 0;
   border: 2px solid green;
   position: absolute;
-  right: -160px;
+  right: -150px;
   top: -30px;
   transform: rotate(225deg);
   width: 0;

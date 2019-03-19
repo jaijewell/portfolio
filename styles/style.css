@@ -137,8 +137,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   left: -1000px;
   top: 5px;
   z-index: 999;
-  background: white;
-  color: black; }
+  background: #313131;
+  color: white; }
 
 .skipLink:focus {
   left: 0; }
@@ -169,7 +169,8 @@ ul {
   padding: 0; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  scroll-behavior: smooth; }
 
 a {
   text-decoration: none;
@@ -206,13 +207,6 @@ span {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
-
-.sectionContent {
-  background: #fafafa;
-  padding: 10% 12%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
 
 .sectionHeader {
   padding: 1% 10%; }
@@ -619,6 +613,13 @@ header .button {
   .intro a:hover {
     color: #ff3057; }
 
+.aboutMe .sectionContent {
+  background: #fafafa;
+  padding: 10% 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .text span {
   color: #ff3057; }
 
@@ -650,7 +651,7 @@ header .button {
   z-index: 0;
   border: 2px solid green;
   position: absolute;
-  right: -160px;
+  right: -150px;
   top: -30px;
   -webkit-transform: rotate(225deg);
   -ms-transform: rotate(225deg);
@@ -729,6 +730,9 @@ header .button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+
+.portfolioPieceContainer .sectionContent {
+  padding: 10%; }
 
 .portfolioPiece {
   display: -webkit-box;

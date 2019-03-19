@@ -1,0 +1,30 @@
+@mixin fontSize($sizeValue){
+  font-size: $sizeValue * 1px;
+  font-size: ($sizeValue/20) * 1rem;
+}
+
+@mixin lineHeight($heightValue){
+  line-height: $heightValue * 1.6;
+  line-height: ($heightValue/20) * 1.6rem;
+}
+
+@mixin desktopSmall {
+  @media (max-width: 1200px) {@content};
+}
+
+@mixin tabletLarge {
+  @media(max-width: 900px) {@content};
+}
+
+@mixin tabletSmall {
+  @media(max-width: 600px) {@content};
+}
+
+@mixin phoneLarge {
+  @media(maxß-width: 480px) {@content};
+}
+
+
+
+
+

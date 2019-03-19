@@ -15,6 +15,7 @@ ul {
 
 ul {
   list-style: none;
+  scroll-behavior: smooth;
   // border: 2px solid peachpuff;
 }
 
@@ -22,6 +23,7 @@ a {
   text-decoration: none;
   padding: 15px;
   color: $primaryColour;
+  
   // border: 2px solid tomato;
 }
 
@@ -57,11 +59,7 @@ span {
   flex-direction: column;
 }
 
-.sectionContent {
-  background: $lightBgColour;
-  padding: 10% 12%;
-  display: flex;
-}
+
 
 // header styling for each section
 .sectionHeader {
