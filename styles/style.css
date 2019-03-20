@@ -500,6 +500,17 @@ footer i {
     font-size: 20px;
     font-size: 1rem; } }
 
+@media (max-width: 1240px) {
+  .portfolioPiece .text h2 {
+    font-size: 30px;
+    font-size: 1.5rem; }
+  .portfolioPiece .text h4 {
+    font-size: 20px;
+    font-size: 1rem; }
+  .portfolioPiece .text p {
+    font-size: 20px;
+    font-size: 1rem; } }
+
 @media (max-width: 900px) {
   header h1 {
     font-size: 100px;
@@ -585,13 +596,15 @@ header .button {
   position: absolute;
   bottom: 0;
   left: 0;
-  min-width: 1000px;
-  min-height: 630px;
+  width: 1000px;
+  height: 630px;
   opacity: 0.45; }
 
 @media (max-width: 1000px) {
   .headerDecor {
-    background: url(../assets/lines-800x640.png) no-repeat; } }
+    background: url(../assets/lines-800x640.png) no-repeat;
+    width: 800px;
+    height: 640px; } }
 
 @media (max-width: 900px) {
   .wrapper {
@@ -607,20 +620,25 @@ header .button {
 
 @media (max-width: 700px) {
   header {
-    min-height: 7vh; }
+    min-height: 50vh; }
   .headerDecor {
     background: url(../assets/lines-600x480.png) no-repeat;
-    bottom: -155px; } }
+    width: 600px;
+    height: 480px; } }
 
 @media (max-width: 600px) {
   .wrapper {
-    padding: 10% 5% 40% 5%; }
+    padding: 10% 5%; }
   .headerDecor {
-    background: url(../assets/lines480x384.png) no-repeat; } }
+    background: url(../assets/lines480x384.png) no-repeat;
+    width: 480px;
+    height: 384px; } }
 
 @media (max-width: 480px) {
   .headerDecor {
-    background: url(../assets/lines300x240.png) no-repeat; } }
+    background: url(../assets/lines300x240.png) no-repeat;
+    width: 300px;
+    height: 240px; } }
 
 .topHeaderNav {
   display: -webkit-box;
@@ -941,10 +959,6 @@ header .button {
   .workPreview a img:focus {
     border: 2px solid #30d2a5; }
 
-.workPreview img {
-  min-width: 500px;
-  min-height: 420px; }
-
 .previewButtons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -962,6 +976,42 @@ header .button {
   transition: 0.3s ease-in-out; }
   .text a.view:hover {
     background: #30d2a5; }
+
+@media (max-width: 1240px) {
+  .work1 .text, .work3 .text {
+    padding-right: 25px; }
+  .work2 .text, .work4 .text {
+    padding-left: 25px; }
+  .portfolioPiece .text h3 {
+    padding-top: 50px; }
+  .text a.view {
+    padding: 5px 20px; }
+  .workPreview img {
+    max-width: 420px; } }
+
+@media (max-width: 900px) {
+  .portfolioPiece {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .workPreview {
+    text-align: right; }
+  .workPreview {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; } }
+
+@media (max-width: 600px) {
+  .workPreview {
+    text-align: center;
+    max-width: 320px; }
+  .workPreview img {
+    width: 100%; } }
+
+@media (max-width: 480px) {
+  .workPreview {
+    text-align: center; } }
 
 section.contact {
   background-color: #0b0b0b;
@@ -1039,6 +1089,26 @@ button img {
   transform: rotate(180deg);
   text-align: center;
   z-index: -100; }
+
+@media (max-width: 900px) {
+  .contactDecor {
+    background: url(../assets/lines-600x480.png) no-repeat;
+    width: 600px;
+    height: 480px; }
+  .contact form {
+    width: 100%; } }
+
+@media (max-width: 600px) {
+  .contactDecor {
+    background: url(../assets/lines480x384.png) no-repeat;
+    width: 480px;
+    height: 384px; } }
+
+@media (max-width: 480px) {
+  .contactDecor {
+    background: url(../assets/lines300x240.png) no-repeat;
+    width: 300px;
+    height: 240px; } }
 
 footer {
   background-color: #ff3057;

@@ -77,3 +77,38 @@ button img {
   z-index: -100;
 
 }
+
+@include tabletLarge {
+  .contactDecor {
+  background: url(../assets/lines-600x480.png) no-repeat;
+  
+  width: 600px;
+  height: 480px;
+  }
+
+  .contact form {
+width: 100%;
+  }
+}
+
+@include tabletSmall {
+  .contactDecor {
+  background: url(../assets/lines480x384.png) no-repeat;
+  
+  width: 480px;
+  height: 384px;
+  }
+
+//   .contact form {
+// width: 80%;
+//   }
+}
+
+@include phoneLarge {
+  .contactDecor {
+    background: url(../assets/lines300x240.png) no-repeat;
+    
+    width: 300px;
+    height: 240px;
+  }
+}

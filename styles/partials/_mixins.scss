@@ -12,6 +12,7 @@
 @mixin desktopMed {
   @media(max-width: 1360px) {@content};
 }
+
 @mixin desktopSmall {
   @media (max-width: 1240px) {@content};
 }

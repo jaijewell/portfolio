@@ -96,17 +96,14 @@
 //     min-height: 400px;
 // }
 
-.workPreview img {
-    min-width: 500px;
-    min-height: 420px;
-    
-}
+// .workPreview img {
+//     min-width: 500px;
+//     min-height: 420px;
+// }
 
 .work1 .text {
     // border: 2px solid skyblue;
 }
-
-
 
 // buttons
 .previewButtons {
@@ -126,5 +123,71 @@
         background: $secondaryAccent;
     }
 }
+
+@include desktopSmall {
+    
+    .work1, .work3 {
+        .text {
+            padding-right: 25px;
+            //  border: 2px solid skyblue;
+        }
+    }   
+
+    .work2, .work4 {
+        .text {
+            padding-left: 25px;
+        // border: 2px solid purple;
+        }   
+    }
+    .portfolioPiece .text h3 {
+        padding-top:50px;
+    }
+    
+    .text a.view {
+        padding: 5px 20px;
+    }
+
+     .workPreview img {
+        max-width: 420px;
+    }
+}
+
+@include tabletLarge {
+   .portfolioPiece {
+       flex-direction: column;
+   }
+
+  .workPreview {
+       text-align: right;
+   }
+
+   .workPreview {
+       order:2;
+   }
+//    .work2 .workPreview,
+//    .work4 .workPreview {
+//        text-align: left;
+//    }
+}
+
+
+@include tabletSmall {
+    .workPreview {
+        text-align: center;
+        max-width: 320px;
+    }
+    .workPreview img {
+        width:100%;
+    }
+
+}
+@include phoneLarge {
+    .workPreview {
+        text-align: center;
+
+    }
+}
+
+
 
 

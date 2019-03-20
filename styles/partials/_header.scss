@@ -8,7 +8,6 @@ header {
 }
 
 
-
 .headerTitleContainer {
     display: flex;
     justify-content: space-between;
@@ -39,8 +38,8 @@ header .button {
     position: absolute;
     bottom: 0;
     left: 0;
-    min-width: 1000px;
-    min-height: 630px;
+    width: 1000px;
+    height: 630px;
     opacity: 0.45;
 }
 
@@ -49,6 +48,8 @@ header .button {
 @include desktopTiny {
   .headerDecor{
     background: url(../assets/lines-800x640.png) no-repeat;
+    width: 800px;
+    height: 640px;
   }
 }
 
@@ -73,21 +74,24 @@ header .button {
 
 @include tabletMed {
   header {
-    min-height: 7vh;
+    min-height: 50vh; 
   }
-  
   .headerDecor{
     background: url(../assets/lines-600x480.png) no-repeat;
-    bottom: -155px;
+    width: 600px;
+    height: 480px;
   }
 }
 @include tabletSmall {
   .wrapper {
-    padding: 10% 5% 40% 5%;
+    padding: 10% 5%;
   }
 
   .headerDecor{
     background: url(../assets/lines480x384.png) no-repeat;
+ 
+    width: 480px;
+    height: 384px;
   }
  
 }
@@ -95,5 +99,8 @@ header .button {
 @include phoneLarge {
   .headerDecor{
     background: url(../assets/lines300x240.png) no-repeat;
+    
+    width: 300px;
+    height: 240px;
   }
 }
