@@ -8,12 +8,24 @@
   line-height: ($heightValue/20) * 1.6rem;
 }
 
+
+@mixin desktopMed {
+  @media(max-width: 1360px) {@content};
+}
 @mixin desktopSmall {
-  @media (max-width: 1200px) {@content};
+  @media (max-width: 1240px) {@content};
+}
+
+@mixin desktopTiny {
+    @media (max-width: 1000px) {@content};
 }
 
 @mixin tabletLarge {
   @media(max-width: 900px) {@content};
+}
+
+@mixin tabletMed {
+    @media(max-width: 700px) {@content};
 }
 
 @mixin tabletSmall {
@@ -21,7 +33,11 @@
 }
 
 @mixin phoneLarge {
-  @media(maxß-width: 480px) {@content};
+  @media(max-width: 480px) {@content};
+}
+
+@mixin phoneSmall {
+    @media(max-width: 350) {@content};
 }
 
 

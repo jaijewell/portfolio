@@ -25,7 +25,22 @@
     color: $secondaryAccent;
 }
 
+.skills img {
+    width: 100%;
+}
+
+.skills .fbIcon {
+    padding: 6px 0 0 0;
+}
+
 .skills span {
     color: $primaryColour;
     padding: 15px 0;
+}
+
+
+@include tabletSmall {
+    .skills h2 {
+        padding-bottom: 10%;
+    }
 }

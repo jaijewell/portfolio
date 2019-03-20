@@ -78,7 +78,7 @@
       <section class="aboutMe sectionLayout" id="aboutMe">
         <div class="sectionHeader">
           <!-- add after element of the -- after 01 -->
-          <h2 class="sectionNumber">01</h2>
+          <h2 class="sectionNumber"">01</h2>
           <div class="sectionDesc">
             <h2>long story short<span> let's talk about me</span></h2>
           </div>
@@ -124,7 +124,7 @@
           </li> -->
           <li>
             <i class="devicon-javascript-plain devIcon"></i
-            ><span>Javascript</span>
+            ><span>JavaScript</span>
           </li>
           <li>
             <i class="devicon-jquery-plain devIcon"></i><span>Jquery</span>
@@ -134,7 +134,7 @@
               class="devIcon"
               src="assets/firebaseIcon.svg"
               alt="firebase icon"
-            /><span>Firebase</span>
+            /><span class="fbIcon">Firebase</span>
           </li>
           <li>
             <i class="devicon-react-original devIcon"></i><span>React</span>
@@ -165,8 +165,8 @@
               <h3>Fashion Forecast</h3>
               <h4> API / Ajax / HTML5 / SCSS / jQuery / Responsive</h4>
               <p>
-                Fashion inspiration generator that fetches the user's current weather conditions from the Apixu API; Based on the user’s current weather conditions, the Etsy API will return a suitable outfit. Pair
-                programmed with <a href="http://jeannetteng.com">Jeannette Ng</a>
+                Enter your city to generate an outfit based on your city's current weather conditions. This app uses the Apixu and Etsy APIs. Pair
+                programmed with <a href="http://jeannetteng.com" target="_blank">Jeannette Ng</a>
               </p>
               <div class="previewButtons">
                 <a class="
@@ -194,8 +194,7 @@
               <h3>Quick Flick Picker</h3>
               <h4>React / Firebase / API / CSS3 / Responsive </h4>
               <p>
-                An application that randomly selects a movie to watch based on user's provided criteria. Users can search movies, create or remove lists, and add or
-                remove movies from lists. This app was created using CSS float properties and media queries. Group programmed with <a href="">Jenna, </a> <a href="">Dan</a> and <a href="">Dennis</a>.
+                Interactive application that helps users determine which movie to watch from community generated lists. Group programmed with <a href="http://jennamaaskant.com/" target="_blank">Jenna Maaskant, </a> <a href="http://danocoder.com/" target="_blank">Dan O'Connor</a> and <a href="https://www.dennismcleod.dev/" target="_blank">Dennis McLeod</a>.
               </p>
               <div class="previewButtons">
                 <a class="
@@ -211,7 +210,7 @@
               <h3>Shake the Eight</h3>
               <h4>JavaScript / jQuery / SASS / Responsive </h4>
               <p>
-                Enter your name and ask the Magic Eight ball a question to have your fate revealed.
+                Enter your name and ask the Magic Eight ball a question to have your burning questions answered.
               </p>
               <div class="previewButtons">
                 <a class="
@@ -259,17 +258,17 @@
       </section>
   <!-- CONTACT SECTION -->
       <section class="contact" id="contact">
-        <form action="https://formspree.io/jaimjewell@gmail.com" method="POST" />
+        <form action="https://formspree.io/jaimie@jaimiejewell.com" method="POST" />
           <h3>Say hello!</h3>
           <p>
             jaimie@jaimiejewell.com
           </p>
           <label for="name">Your name</label>
-          <input type="text" id="name" name="userName" placeholder="Jane Doe" />
+          <input type="text" id="name" name="userName" placeholder="Jane Doe" required />
           <label for="email" >Your email</label>
-          <input type="email" id="email" placeholder="example@email.com" name="email"/>
+          <input type="email" id="email" placeholder="example@email.com" name="email" required/>
           <label class ="messageInput" for="message">Your Message</label>
-          <input name="message" class="userMessage" type="text" id="message" placeholder="message here" />
+          <input name="message" class="userMessage" type="text" id="message" placeholder="message here" required />
           
           <label for="submitMessage" class="visuallyHidden">Submit</label>
           <button name="button" class="submit" id=submitMessage type="submit">

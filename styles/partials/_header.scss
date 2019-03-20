@@ -24,22 +24,76 @@ header {
     a {
         margin-top: 10%;
     }
-
 }
 
 header .button {
     background: $primaryAccent;
     color: $primaryColour;
-    padding: 20px 50px 20px 15px;
+    padding: 20px 15px 20px 15px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .headerDecor {
-    background: url(../assets/headerLines.png);
+    background: url(../assets/headerLines.png) no-repeat;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 1000px;
-    height: 630px;
+    min-width: 1000px;
+    min-height: 630px;
     opacity: 0.45;
+}
+
+//styling for media queries
+
+@include desktopTiny {
+  .headerDecor{
+    background: url(../assets/lines-800x640.png) no-repeat;
+  }
+}
+
+@include tabletLarge {
+  .wrapper {
+    padding: 15% 5% 25% 5%;
+  }
+  
+  .logo {
+    display: none;
+  }
+
+  header .topHeaderNav {
+    justify-content: center;
+  }
+
+  header .headerNavSocial {
+    display: none;
+  }
+}
+
+
+@include tabletMed {
+  header {
+    min-height: 7vh;
+  }
+  
+  .headerDecor{
+    background: url(../assets/lines-600x480.png) no-repeat;
+    bottom: -155px;
+  }
+}
+@include tabletSmall {
+  .wrapper {
+    padding: 10% 5% 40% 5%;
+  }
+
+  .headerDecor{
+    background: url(../assets/lines480x384.png) no-repeat;
+  }
+ 
+}
+
+@include phoneLarge {
+  .headerDecor{
+    background: url(../assets/lines300x240.png) no-repeat;
+  }
 }

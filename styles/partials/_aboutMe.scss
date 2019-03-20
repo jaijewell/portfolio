@@ -27,7 +27,7 @@
 //position: relative required to position triangles
 .intro {
   // border: 2px solid plum;
-  z-index:100;
+  z-index: 100;
   margin: auto 0;
   padding-left: 50px;
   position: relative;
@@ -35,23 +35,17 @@
   p a {
     color: $quaternaryColour;
     padding: 0;
-    z-index:200;
-   
+    z-index: 200;
   }
 
   a:hover {
     color: $primaryAccent;
-    
   }
-  
 }
-.aboutMe .sectionContent  {
-  background: $lightBgColour;
-  padding: 10% 12%;
+.aboutMe .sectionContent {
+  padding: 5% 12% 0 12%;
   display: flex;
 }
-
-
 
 .text span {
   // border: 2px solid orange;
@@ -72,14 +66,16 @@
   position: relative;
   display: inline-block;
   margin: 0 5px;
-  z-index:0;
+  z-index: 0;
 }
 
 .triangle1 {
-  z-index:0;
+  z-index: 0;
   position: absolute;
-  top: -180px;
-  right: -170px;
+
+  top: -60px;
+  right: -120px;
+  // right: -170px;
   transform: rotate(-60deg);
   width: 0;
   height: 0;
@@ -92,8 +88,9 @@
   z-index: 0;
   border: 2px solid green;
   position: absolute;
-  right: -150px;
-  top: -30px;
+  right: -120px;
+  // right: -150px;
+  top: 75px;
   transform: rotate(225deg);
   width: 0;
   height: 0;
@@ -101,4 +98,101 @@
   border-right-width: 255px;
   border-left-width: 255px;
   border-bottom: solid 285px rgba(255, 48, 87, 0.05);
+}
+
+@include desktopMed {
+  .intro h2 {
+    margin: -20px 0 0 0;
+  }
+}
+@include desktopSmall {
+  .triangle1 {
+    top: 12px;
+    right: -60px;
+  }
+
+  .triangle2 {
+    top: 100px;
+    right: -60px;
+  }
+}
+
+@include desktopTiny {
+  // .headshotImage {
+  //   display: flex;
+  //   align-items: center;
+  // }
+
+  .headshotImage img {
+    width: 200px;
+  }
+
+  .headshotImage p {
+    // top: 295px;
+    @include fontSize(18);
+  }
+}
+
+@include tabletLarge {
+  .aboutMe .sectionContent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headshotImage {
+    padding-bottom: 50px;
+  }
+
+  .triangle1 {
+    right: -20px;
+  }
+
+  .triangle2 {
+    right: -20px;
+  }
+}
+
+@include tabletSmall {
+  .sectionHeader .sectionNumber {
+    display: none;
+  }
+
+  .sectionHeader .sectionDesc h2 {
+    text-align: left;
+
+    span {
+      @include fontSize(38);
+    }
+  }
+
+  .aboutMe .sectionContent {
+    padding: 5% 5% 0 5%;
+  }
+
+   .triangle1 {
+  
+    right: 20px;
+  }
+
+  .triangle2 {
+   
+    right: 20px;
+  }
+}
+
+@include phoneLarge {
+  .triangle1 {
+    right: 30px;
+    border-right-width: 200px;
+    border-left-width: 200px;
+    border-bottom: solid 235px rgba(255, 48, 87, 0.05);
+  }
+
+  .triangle2 {
+    right:30px;
+    border-right-width: 205px;
+    border-left-width: 205px;
+    border-bottom: solid 245px rgba(255, 48, 87, 0.05);
+  }
 }

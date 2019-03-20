@@ -1,6 +1,6 @@
-.contact {
+section.contact {
   background-color: $quaternaryColour;
-  position: relative //for contactDecor
+  position: relative; //for contactDecor
 }
 
 .contact form {
@@ -41,7 +41,7 @@
 }
 
 button[type="submit"] {
-  padding: 15px 50px 15px 15px;
+  padding: 15px;
   margin-top: 40px;
   display: flex;
   align-items: center;
@@ -74,5 +74,6 @@ button img {
   background: transparent;
   transform: rotate(180deg);
   text-align: center;
+  z-index: -100;
 
 }

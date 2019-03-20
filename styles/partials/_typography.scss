@@ -50,6 +50,26 @@ header h2 {
 header .button {
   font-weight: 700;
 }
+
+//header media queries
+@include desktopSmall {
+ header h1 {
+    @include fontSize(125);
+  }
+
+  header h2 {
+    @include fontSize(42);
+  }
+
+  .headerNav li {
+    @include fontSize(26)
+  }
+
+  .headerNavSocial li {
+    @include fontSize(20)
+  }
+}
+
 //global font sizes and typography styles for section headers
 .sectionHeader h2.sectionNumber {
   font-family: $displayFont;
@@ -188,5 +208,72 @@ footer {
 
 footer i {
     @include fontSize(20);
+}
+
+//media queries for typography begin here 
+@include desktopTiny {
+
+  .intro h2 {
+    @include fontSize(40);
+  }
+
+  .intro h3 {
+    @include fontSize(22);
+
+  }
+
+  .intro p {
+    @include fontSize(20);
+  }
+}
+
+
+@include tabletLarge {
+  header h1 {
+    @include fontSize(100);
+  }
+  header h2 {
+    @include fontSize(36);
+  }
+
+  .headerNav li {
+    @include fontSize(28);
+  }
+}
+
+@include tabletSmall {
+  header h1 {
+    @include fontSize(80);
+  }
+
+  header h2 {
+    @include fontSize(30);
+  }
+
+  .headerNav li {
+    @include fontSize(20);
+  }
+
+  .sectionHeader .sectionDesc h2 {
+    span {
+      @include fontSize(38);
+    }
+  }
+
+}
+
+
+@include phoneLarge {
+  header h1 {
+    @include fontSize(65);
+  }
+
+  header h2 {
+    margin-top: -50px;
+  }
+
+  .headerNav li {
+    @include fontSize(18);
+  }
 }
 

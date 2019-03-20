@@ -15,10 +15,7 @@
     height: 630px;
 }
 
-.worksSectionTitle h2 {
-    padding: 5% 0;
 
-}
 
 .portfolioPieceContainer {
     padding-top: 0;
@@ -27,15 +24,15 @@
     // border: 2px solid green;
 
 }
-.portfolioPieceContainer .sectionContent {
-    padding: 10%;
+.work .sectionContent {
+    padding: 5% 10% 0 10%;
 }
 
 .portfolioPiece {
     display: flex;
     justify-content: space-between;
     z-index: 100;
-    padding: 5% 0;
+    // padding: 1% 0;
     // border: 2px solid red;
 }
 
@@ -86,7 +83,14 @@
     // border: 2px solid peru;
     a {
         padding:0;
-    }
+        &:focus {
+            border: none;
+        }
+
+        img:focus {
+            border: 2px solid $secondaryAccent;
+        }
+    } 
 }
 //     min-width: 400px;
 //     min-height: 400px;

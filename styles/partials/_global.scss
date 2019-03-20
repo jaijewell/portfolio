@@ -1,3 +1,7 @@
+body {
+  max-width: 1900px;
+  margin: 0 auto;
+}
 .wrapper {
   padding: 5% 10% 5% 10%;
   // border: 2px solid turquoise;
@@ -37,7 +41,7 @@ span {
 
   display: flex;
   justify-content: center;
-  padding: 0;
+  padding: 0 0 5% 0;
  
 }
 .arrowIcon {
@@ -93,6 +97,10 @@ span {
   text-align: right;
 }
 
+
+.sectionContent {
+   background: $lightBgColour;
+}
 .text h3,
 .text p {
   padding: 10px 0;
@@ -122,3 +130,11 @@ a:focus {
   border: 2px solid $secondaryAccent;
 }
 
+//media queries
+
+@include tabletLarge {
+  .wrapper {
+    padding: 5%;
+  // border: 2px solid turquoise;
+  }
+}

@@ -1,4 +1,4 @@
 $('a').smoothScroll({
     offset: 100,
-    autoFocus: true
+    autoFocus: false
 });
