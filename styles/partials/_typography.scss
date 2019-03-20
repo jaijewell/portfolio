@@ -102,7 +102,7 @@ header .button {
 //global font sizes and typography styles for section headers and text
 .text h2 {
   @include fontSize(50);
-  @include lineHeight(50);
+  @include lineHeight(35);
   font-style: bold;
 }
 
@@ -211,81 +211,88 @@ footer i {
 }
 
 //media queries for typography begin here 
-@include desktopTiny {
-
-  .intro h2 {
-    @include fontSize(40);
-  }
-
-  .intro h3 {
-    @include fontSize(22);
-
-  }
-
-  .intro p {
-    @include fontSize(20);
-  }
-}
-
 @include desktopSmall {
   .portfolioPiece .text {
     h2 {
       @include fontSize(30);
+      @include lineHeight(30);
     }
 
     h4 {
       @include fontSize(20);
+      @include lineHeight(20)
     }
     
     p {
       @include fontSize(20);
+      @include lineHeight(20);
     }
   }
 }
 
-//    .text a.view {
-//         @include fontSize(18);
-//     }
-// }
+@include desktopTiny {
+
+  .intro h2 {
+    @include fontSize(40);
+    @include lineHeight(30);
+  }
+
+  .intro h3 {
+    @include fontSize(22);
+    @include lineHeight(22);
+  }
+
+  .intro p {
+    @include fontSize(20);
+    @include lineHeight(20);
+  }
+}
 
 @include tabletLarge {
   header h1 {
     @include fontSize(100);
+    @include lineHeight(100);
   }
   header h2 {
     @include fontSize(36);
+    @include lineHeight(36);
   }
 
   .headerNav li {
     @include fontSize(28);
+    @include lineHeight(28);
   }
 }
 
 @include tabletSmall {
   header h1 {
     @include fontSize(80);
+    @include lineHeight(80);
   }
 
   header h2 {
     @include fontSize(30);
+    @include lineHeight(30);
   }
 
   .headerNav li {
     @include fontSize(20);
+    @include lineHeight(20);
   }
 
   .sectionHeader .sectionDesc h2 {
     span {
       @include fontSize(38);
+      @include lineHeight(38)
     }
   }
-
 }
 
 
 @include phoneLarge {
   header h1 {
-    @include fontSize(65);
+    @include fontSize(60);
+    @include lineHeight(60);
   }
 
   header h2 {
@@ -294,6 +301,7 @@ footer i {
 
   .headerNav li {
     @include fontSize(18);
+    @include lineHeight(18);
   }
 }
 

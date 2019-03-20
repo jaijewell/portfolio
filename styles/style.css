@@ -179,7 +179,7 @@ ul {
 a {
   text-decoration: none;
   padding: 15px;
-  color: #ffffff; }
+  color: white; }
 
 span {
   color: #30d2a5; }
@@ -279,7 +279,7 @@ h2,
 h3,
 p,
 a {
-  color: #ffffff; }
+  color: white; }
 
 a,
 p {
@@ -366,8 +366,8 @@ header .button {
 .text h2 {
   font-size: 50px;
   font-size: 2.5rem;
-  line-height: 80;
-  line-height: 4rem;
+  line-height: 56;
+  line-height: 2.8rem;
   font-style: bold; }
 
 .text h3,
@@ -431,7 +431,7 @@ header .button {
   font-weight: 400; }
 
 .contact label {
-  color: #ffffff;
+  color: white;
   font-family: "Maven Pro", sans-serif;
   font-size: 20px;
   font-size: 1rem;
@@ -440,11 +440,11 @@ header .button {
 
 .contact input[type="text"],
 .contact input[type="email"] {
-  color: #ffffff; }
+  color: white; }
 
 .contact input[type="text"]::-webkit-input-placeholder,
 .contact input[type="email"]::-webkit-input-placeholder {
-  color: #ffffff;
+  color: white;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-size: 0.9rem;
@@ -452,7 +452,7 @@ header .button {
 
 .contact input[type="text"]:-ms-input-placeholder,
 .contact input[type="email"]:-ms-input-placeholder {
-  color: #ffffff;
+  color: white;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-size: 0.9rem;
@@ -460,7 +460,7 @@ header .button {
 
 .contact input[type="text"]::-ms-input-placeholder,
 .contact input[type="email"]::-ms-input-placeholder {
-  color: #ffffff;
+  color: white;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-size: 0.9rem;
@@ -468,7 +468,7 @@ header .button {
 
 .contact input[type="text"]::placeholder,
 .contact input[type="email"]::placeholder {
-  color: #ffffff;
+  color: white;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-size: 0.9rem;
@@ -476,7 +476,7 @@ header .button {
 
 button[type="submit"] {
   background: #ff3057;
-  color: #ffffff;
+  color: white;
   text-transform: uppercase; }
 
 footer {
@@ -489,62 +489,92 @@ footer i {
   font-size: 20px;
   font-size: 1rem; }
 
-@media (max-width: 1000px) {
-  .intro h2 {
-    font-size: 40px;
-    font-size: 2rem; }
-  .intro h3 {
-    font-size: 22px;
-    font-size: 1.1rem; }
-  .intro p {
-    font-size: 20px;
-    font-size: 1rem; } }
-
 @media (max-width: 1240px) {
   .portfolioPiece .text h2 {
     font-size: 30px;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    line-height: 48;
+    line-height: 2.4rem; }
   .portfolioPiece .text h4 {
     font-size: 20px;
-    font-size: 1rem; }
+    font-size: 1rem;
+    line-height: 32;
+    line-height: 1.6rem; }
   .portfolioPiece .text p {
     font-size: 20px;
-    font-size: 1rem; } }
+    font-size: 1rem;
+    line-height: 32;
+    line-height: 1.6rem; } }
+
+@media (max-width: 1000px) {
+  .intro h2 {
+    font-size: 40px;
+    font-size: 2rem;
+    line-height: 48;
+    line-height: 2.4rem; }
+  .intro h3 {
+    font-size: 22px;
+    font-size: 1.1rem;
+    line-height: 35.2;
+    line-height: 1.76rem; }
+  .intro p {
+    font-size: 20px;
+    font-size: 1rem;
+    line-height: 32;
+    line-height: 1.6rem; } }
 
 @media (max-width: 900px) {
   header h1 {
     font-size: 100px;
-    font-size: 5rem; }
+    font-size: 5rem;
+    line-height: 160;
+    line-height: 8rem; }
   header h2 {
     font-size: 36px;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    line-height: 57.6;
+    line-height: 2.88rem; }
   .headerNav li {
     font-size: 28px;
-    font-size: 1.4rem; } }
+    font-size: 1.4rem;
+    line-height: 44.8;
+    line-height: 2.24rem; } }
 
 @media (max-width: 600px) {
   header h1 {
     font-size: 80px;
-    font-size: 4rem; }
+    font-size: 4rem;
+    line-height: 128;
+    line-height: 6.4rem; }
   header h2 {
     font-size: 30px;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    line-height: 48;
+    line-height: 2.4rem; }
   .headerNav li {
     font-size: 20px;
-    font-size: 1rem; }
+    font-size: 1rem;
+    line-height: 32;
+    line-height: 1.6rem; }
   .sectionHeader .sectionDesc h2 span {
     font-size: 38px;
-    font-size: 1.9rem; } }
+    font-size: 1.9rem;
+    line-height: 60.8;
+    line-height: 3.04rem; } }
 
 @media (max-width: 480px) {
   header h1 {
-    font-size: 65px;
-    font-size: 3.25rem; }
+    font-size: 60px;
+    font-size: 3rem;
+    line-height: 96;
+    line-height: 4.8rem; }
   header h2 {
     margin-top: -50px; }
   .headerNav li {
     font-size: 18px;
-    font-size: 0.9rem; } }
+    font-size: 0.9rem;
+    line-height: 28.8;
+    line-height: 1.44rem; } }
 
 header {
   min-height: 100vh;
@@ -586,7 +616,7 @@ header {
 
 header .button {
   background: #ff3057;
-  color: #ffffff;
+  color: white;
   padding: 20px 15px 20px 15px;
   text-transform: uppercase;
   text-align: center; }
@@ -620,7 +650,7 @@ header .button {
 
 @media (max-width: 700px) {
   header {
-    min-height: 50vh; }
+    min-height: 75vh; }
   .headerDecor {
     background: url(../assets/lines-600x480.png) no-repeat;
     width: 600px;
@@ -638,7 +668,16 @@ header .button {
   .headerDecor {
     background: url(../assets/lines300x240.png) no-repeat;
     width: 300px;
-    height: 240px; } }
+    height: 240px; }
+  header h1 {
+    padding-bottom: 50px; } }
+
+header .hamburger,
+header .exitResponsive {
+  display: none; }
+
+header .show.siteNav {
+  display: block; }
 
 .topHeaderNav {
   display: -webkit-box;
@@ -647,7 +686,7 @@ header .button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  color: #ffffff; }
+  color: white; }
 
 .headerNav ul {
   display: -webkit-box;
@@ -672,6 +711,66 @@ header .button {
   .topHeaderNav a:hover:after {
     width: 100%;
     left: 0; }
+
+@media (max-width: 480px) {
+  header button.hamburger {
+    padding: 0;
+    text-align: right;
+    background: none;
+    border: none; }
+    header button.hamburger i {
+      font-size: 60px;
+      font-size: 3rem;
+      color: #ff3057; }
+  .exitResponsive i {
+    font-size: 50px;
+    font-size: 2.5rem;
+    color: #ff3057;
+    position: absolute;
+    top: 5px;
+    left: 5px; }
+  header .exitResponsive,
+  header .hamburger {
+    width: 100%;
+    display: block;
+    padding-top: 0; }
+  .menu {
+    position: relative; }
+  header .siteNav {
+    z-index: 200;
+    margin: 0;
+    display: none;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(49, 49, 49, 0.95); }
+    header .siteNav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+  .siteNav li {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+    padding: 25px 0;
+    width: 100%; }
+    .siteNav li a {
+      font-size: 48px;
+      font-size: 2.4rem;
+      text-align: center;
+      width: 100%;
+      padding: 25px;
+      color: #ff3057; }
+      .siteNav li a:hover {
+        color: #30d2a5; } }
 
 .headerNavSocial {
   display: -webkit-box;
@@ -893,7 +992,7 @@ header .button {
   padding: 6px 0 0 0; }
 
 .skills span {
-  color: #ffffff;
+  color: white;
   padding: 15px 0; }
 
 @media (max-width: 600px) {
@@ -966,7 +1065,7 @@ header .button {
 
 .text a.view {
   background: #ff3057;
-  color: #ffffff;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   padding: 10px 25px;
@@ -1129,7 +1228,7 @@ footer ul {
   display: flex; }
 
 footer i {
-  color: #ffffff;
+  color: white;
   padding: 0 10px;
   width: 100%; }
 

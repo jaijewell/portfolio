@@ -1,3 +1,17 @@
+header {
+    //for functional hamburger menu
+    .hamburger,
+    .exitResponsive {
+        display: none;
+    }
+
+    .show.siteNav {
+	    display: block;
+    }  //hamburger default styling ends here
+
+}
+
+
 .topHeaderNav {
     display: flex;
     justify-content: space-between;
@@ -29,3 +43,83 @@
         left: 0; 
     }
 }
+
+
+//media query begins here
+@include phoneLarge {
+    
+    header button.hamburger {
+            padding: 0;
+            text-align: right;
+            background:none;
+            border:none;
+        
+            i {
+            @include fontSize(60);
+            color: $primaryAccent;
+            // padding-top: 5%;
+            }
+        }
+
+        .exitResponsive i {
+            @include fontSize(50);
+            color: $primaryAccent;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        header .exitResponsive,
+        header .hamburger {
+            width: 100%;
+            display: block;
+            padding-top: 0;
+        }
+     //header nest ends here
+
+    .menu {
+        position: relative;
+    }
+
+	header .siteNav {
+        z-index: 200;
+        margin: 0;
+        display: none;
+        height: 100vh;
+        // width: 100vw;
+		position: absolute;
+		top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(49,49,49, .95) ;
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            // height: inherit;
+        }
+	} //siteNav nest ends here
+
+    .siteNav li {
+        justify-content: space-between;
+        text-align: center;
+        padding: 25px 0;
+        width: 100%;
+        
+        
+        a {
+            @include fontSize(48)
+            text-align: center;
+            width: 100%;
+            padding: 25px;
+            color: $primaryAccent;
+        
+            &:hover {
+                color: $secondaryAccent;
+            }
+        } //.siteNav a tag styling ends here
+    } //.siteNav li styling ends here
+
+} //.phone media query ends here
+

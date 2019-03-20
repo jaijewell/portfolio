@@ -74,7 +74,7 @@ header .button {
 
 @include tabletMed {
   header {
-    min-height: 50vh; 
+    min-height: 75vh; 
   }
   .headerDecor{
     background: url(../assets/lines-600x480.png) no-repeat;
@@ -99,8 +99,11 @@ header .button {
 @include phoneLarge {
   .headerDecor{
     background: url(../assets/lines300x240.png) no-repeat;
-    
     width: 300px;
     height: 240px;
+  }
+
+  header h1 {
+    padding-bottom: 50px;
   }
 }
