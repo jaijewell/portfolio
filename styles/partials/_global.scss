@@ -4,7 +4,6 @@ body {
 }
 .wrapper {
   padding: 5% 10% 5% 10%;
-  // border: 2px solid turquoise;
 }
 
 h1,
@@ -20,30 +19,25 @@ ul {
 ul {
   list-style: none;
   scroll-behavior: smooth;
-  // border: 2px solid peachpuff;
 }
 
 a {
   text-decoration: none;
   padding: 15px;
   color: $primaryColour;
-  
-  // border: 2px solid tomato;
 }
 
 span {
   color: $secondaryAccent;
-  // border: 2px solid yellow;
 }
 
-//navigation arrow styling 
+//navigation arrow styling
 .arrowContainer {
-
   display: flex;
   justify-content: center;
   padding: 0 0 5% 0;
- 
 }
+
 .arrowIcon {
   width: 5%;
 }
@@ -62,8 +56,6 @@ span {
   display: flex;
   flex-direction: column;
 }
-
-
 
 // header styling for each section
 .sectionHeader {
@@ -97,9 +89,8 @@ span {
   text-align: right;
 }
 
-
 .sectionContent {
-   background: $lightBgColour;
+  background: $lightBgColour;
 }
 .text h3,
 .text p {
@@ -131,10 +122,8 @@ a:focus {
 }
 
 //media queries
-
 @include tabletLarge {
   .wrapper {
     padding: 5%;
-  // border: 2px solid turquoise;
   }
 }

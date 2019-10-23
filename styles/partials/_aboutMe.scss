@@ -5,12 +5,10 @@
 
 .headshotImage {
   position: relative;
-  // border: 2px solid skyblue;
 }
 
 .headshotImage img {
   width: 300px;
-  // border: 2px solid turquoise;
 }
 
 .headshotImage p {
@@ -20,13 +18,11 @@
   left: -109px;
   transform: rotate(270deg);
   min-height: 20px;
-  // border: 2px solid tomato;
   color: $tertiaryColour;
 }
 
 //position: relative required to position triangles
 .intro {
-  // border: 2px solid plum;
   z-index: 100;
   margin: auto 0;
   padding-left: 50px;
@@ -48,17 +44,11 @@
 }
 
 .text span {
-  // border: 2px solid orange;
   color: $primaryAccent;
 }
 
 .text h2 {
-  // border: 2px solid purple;
   color: $primaryAccent;
-}
-
-.text p {
-  // border: 2px solid blueviolet;
 }
 
 //triangle decoration styling
@@ -75,7 +65,6 @@
 
   top: -60px;
   right: -120px;
-  // right: -170px;
   transform: rotate(-60deg);
   width: 0;
   height: 0;
@@ -89,7 +78,6 @@
   border: 2px solid green;
   position: absolute;
   right: -120px;
-  // right: -150px;
   top: 75px;
   transform: rotate(225deg);
   width: 0;
@@ -100,6 +88,7 @@
   border-bottom: solid 285px rgba(255, 48, 87, 0.05);
 }
 
+//responsive
 @include desktopMed {
   .intro h2 {
     margin: -20px 0 0 0;
@@ -118,17 +107,11 @@
 }
 
 @include desktopTiny {
-  // .headshotImage {
-  //   display: flex;
-  //   align-items: center;
-  // }
-
   .headshotImage img {
     width: 200px;
   }
 
   .headshotImage p {
-    // top: 295px;
     @include fontSize(18);
   }
 }
@@ -171,12 +154,10 @@
   }
 
    .triangle1 {
-  
     right: 20px;
   }
 
   .triangle2 {
-   
     right: 20px;
   }
 }

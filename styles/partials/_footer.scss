@@ -14,20 +14,17 @@ footer i {
     color: $primaryColour;
     padding: 0 10px;
     width: 100%;
-    // border: 2px solid blue;
 }
 
 
 footer li a {
     padding: 0;
     transition: $transitionDetail;
-    // border: 2px solid yellow;
 
 }
 
 footer li i:hover {
     color: $quaternaryColour;
     cursor: pointer;
-    // border-radius: 50%;
 }
 

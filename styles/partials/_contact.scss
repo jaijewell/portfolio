@@ -1,6 +1,6 @@
 section.contact {
   background-color: $quaternaryColour;
-  position: relative; //for contactDecor
+  position: relative; //position for contactDecor
 }
 
 .contact form {
@@ -13,13 +13,13 @@ section.contact {
   z-index: 100;
 }
 
-.contact h3{
-    padding-bottom: 10px;
+.contact h3 {
+  padding-bottom: 10px;
 }
 
 .contact h3,
 .contact p {
-    width: 80%;
+  width: 80%;
 }
 
 .contact label {
@@ -27,6 +27,7 @@ section.contact {
   text-align: left;
   padding: 40px 0 0px 0;
 }
+
 .contact input[type="text"],
 .contact input[type="email"] {
   padding-left: 15px;
@@ -36,7 +37,6 @@ section.contact {
   border-right: none;
   border-left: none;
   background: transparent;
-  // background: $quaternaryColour;
   z-index: 100;
 }
 
@@ -49,25 +49,20 @@ button[type="submit"] {
   z-index: 100;
 }
 
-.contact input[type="text"],
-.contact input[type="email"] {
-  
-}
-
 button img {
   width: 18px;
   margin: 5px 0 0 5px;
 }
 
 .contactDecor {
-    background: url(../assets/headerLines.png) no-repeat;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 800px;
-    height: 530px;
-    opacity: 0.45;
-    z-index:0;
+  background: url(../assets/headerLines.png) no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 800px;
+  height: 530px;
+  opacity: 0.45;
+  z-index: 50;
 }
 
 .contact .arrowContainer {
@@ -75,39 +70,32 @@ button img {
   transform: rotate(180deg);
   text-align: center;
   z-index: -100;
-
 }
 
 @include tabletLarge {
   .contactDecor {
-  background: url(../assets/lines-600x480.png) no-repeat;
-  
-  width: 600px;
-  height: 480px;
+    background: url(../assets/lines-600x480.png) no-repeat;
+    width: 600px;
+    height: 480px;
   }
 
   .contact form {
-width: 100%;
+    width: 100%;
   }
 }
 
 @include tabletSmall {
   .contactDecor {
-  background: url(../assets/lines480x384.png) no-repeat;
-  
-  width: 480px;
-  height: 384px;
+    background: url(../assets/lines480x384.png) no-repeat;
+    width: 480px;
+    height: 384px;
   }
-
-//   .contact form {
-// width: 80%;
-//   }
 }
 
 @include phoneLarge {
   .contactDecor {
     background: url(../assets/lines300x240.png) no-repeat;
-    
+
     width: 300px;
     height: 240px;
   }
